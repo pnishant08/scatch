@@ -7,6 +7,7 @@ const db=require("./config/mongoose.connection")
 const ownersRouter=require("./routes/ownersRouter")
 const usersRouter=require("./routes/usersRouter")
 const productsRouter=require("./routes/productsRouter")
+const index=require("./routes/index")
 
 
 
@@ -20,11 +21,13 @@ app.set("view engine","ejs")
 app.use("/owners",ownersRouter);
 app.use("/users",usersRouter);
 app.use("/products",productsRouter);
+app.use("/",index);
 
 
-app.get("/",(req,res)=>{
-    res.send("hey");
-})
+
+// app.get("/",(req,res)=>{
+//     res.render("index");
+// })
 
 
 app.listen(3000);
