@@ -11,9 +11,11 @@
   "license": "ISC",
   "description": "��#\u0000 \u0000P\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000 \u0000T\u0000i\u0000t\u0000l\u0000e\u0000\r\u0000 \u0000",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "config": "^3.3.12",
     "cookie-parser": "^1.4.6",
     "debug": "^4.3.6",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
